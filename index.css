@@ -21,7 +21,7 @@ header {
   padding: 0 0 30px 0;
 }
 
-.search-form-input {
+.search-input {
   background-color: #f9f7fe;
   border: none;
   border-radius: 6px;
@@ -30,7 +30,7 @@ header {
   padding: 15px 20px;
 }
 
-.search-form-button {
+.search-button {
   background: #885df1;
   padding: 15px 30px;
   border: none;
@@ -44,44 +44,44 @@ main {
   padding: 30px 0;
 }
 
-.weather-app-data {
+.weather-details {
   display: flex;
   justify-content: space-between;
 }
 
-.weather-app-city {
+.heading-target {
   margin: 0;
   font-size: 38px;
   line-height: 48px;
 }
 
-.weather-app-details {
+.paragraph-target {
   font-size: 16px;
   color: rgba(39, 33, 66, 0.4);
   line-height: 24px;
   font-weight: 500;
 }
 
-.weather-app-details strong {
+.paragraph-target strong {
   color: #f65282;
 }
 
-.weather-app-temperature-container {
+.temperature-layout {
   display: flex;
 }
 
-.weather-app-icon {
+.weather-icon {
   font-size: 44px;
   margin-top: 22px;
 }
 
-.weather-app-temperature {
+.actual-temperature {
   font-size: 88px;
   margin-left: 10px;
   font-weight: bold;
 }
 
-.weatehr-app-unit {
+.temperature-unit {
   margin-top: 16px;
   font-size: 28px;
 }
@@ -90,6 +90,6 @@ footer {
   border-top: 1px solid #f9f7fe;
   padding: 30px 0 0 0;
   text-align: center;
-  font-size: 14px;
-  color: rgba(0, 0, 0, 0.6);
+  font-size: 13px;
+  color: rgba(8, 3, 3, 0.6);
 }
