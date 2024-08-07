@@ -71,14 +71,15 @@ main {
 }
 
 .weather-icon {
-  font-size: 44px;
-  margin-top: 22px;
+  width: 88px;
+  height: 88px;
 }
 
 .actual-temperature {
   font-size: 88px;
   margin-left: 10px;
   font-weight: bold;
+  line-height: 88px;
 }
 
 .temperature-unit {

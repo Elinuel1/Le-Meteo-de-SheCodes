@@ -20,6 +20,7 @@ function refreshWeather(response) {
   let windSpeed = document.querySelector("#wind-speed");
   let timeType = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
+  let iconType = document.querySelector("#icon");
 
   cityType.innerHTML = response.data.city;
 
@@ -27,8 +28,8 @@ function refreshWeather(response) {
   descriptionType.innerHTML = response.data.condition.description;
   windSpeed.innerHTML = `${response.data.wind.speed}km/h`;
   timeType.innerHTML = formatDate(date);
-
   temp.innerHTML = Math.round(theTemperature);
+  iconType.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon" />`;
 }
 
 function formatDate(date) {
@@ -51,6 +52,7 @@ function formatDate(date) {
 
   return `${day} ${hours}:${minutes}`;
 }
+
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
