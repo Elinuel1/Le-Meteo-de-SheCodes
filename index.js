@@ -56,4 +56,4 @@ function formatDate(date) {
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
-citySearch("Accra");
+citySearch("London");
